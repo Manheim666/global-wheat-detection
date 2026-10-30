@@ -1,0 +1,55 @@
+{
+  "model": "best.pt",
+  "base_weights": "yolo26m.pt",
+  "image_size": 1024,
+  "epochs": 40,
+  "validation": "514 held-out images, stratified by source",
+  "chosen": {
+    "tta": true,
+    "conf": 0.4,
+    "chosen_on": "first half of validation images"
+  },
+  "map_050_075_reported_half": 0.6984,
+  "map_050_075_all_val": 0.694,
+  "per_source": {
+    "arvalis_1": {
+      "mean": 0.6187,
+      "count": 159
+    },
+    "arvalis_2": {
+      "mean": 0.5017,
+      "count": 31
+    },
+    "arvalis_3": {
+      "mean": 0.6889,
+      "count": 84
+    },
+    "ethz_1": {
+      "mean": 0.7577,
+      "count": 112
+    },
+    "inrae_1": {
+      "mean": 0.8034,
+      "count": 26
+    },
+    "rres_1": {
+      "mean": 0.8251,
+      "count": 65
+    },
+    "usask_1": {
+      "mean": 0.6897,
+      "count": 30
+    }
+  },
+  "sweep_all_val": {
+    "tta=False,conf=0.2": 0.6728,
+    "tta=False,conf=0.3": 0.6878,
+    "tta=False,conf=0.4": 0.6854,
+    "tta=False,conf=0.5": 0.6715,
+    "tta=True,conf=0.2": 0.6621,
+    "tta=True,conf=0.3": 0.6863,
+    "tta=True,conf=0.4": 0.694,
+    "tta=True,conf=0.5": 0.6896
+  },
+  "ultralytics_val_map50_95": 0.5755
+}

@@ -1,8 +1,5 @@
 # Global Wheat Detection
 
-## Why it matters
-Counting wheat heads in field photos tells breeders and farmers how dense a crop is and how much it will yield. Done by hand it is slow, and a model trained on one farm often fails on the next, because varieties, growth stages, lighting and camera setups all change. The training photos come from seven research sites in France, Switzerland, the UK and Canada.
-
 ## Data
 3,422 photos at 1024 × 1024 px with 147,793 boxed wheat heads, often 40 to 100 per photo, many overlapping or cut off at the edges. 49 photos contain no wheat heads at all.
 
